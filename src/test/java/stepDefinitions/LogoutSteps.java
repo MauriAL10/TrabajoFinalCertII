@@ -2,6 +2,7 @@ package stepDefinitions;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
+import org.junit.Assert;
 import pages.LoginPage;
 import pages.MainPage;
 import pages.PIMPage;
@@ -18,6 +19,6 @@ public class LogoutSteps {
 
     @Then("The login page should be displayed")
     public void loginIconIsDisplayed(){
-        loginPage.loginIconIsDisplayed();
+        Assert.assertTrue(loginPage.loginIconIsDisplayed());
     }
 }

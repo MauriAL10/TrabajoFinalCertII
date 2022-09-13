@@ -15,6 +15,6 @@ Feature: Admin page feature
     Then The employee username "<username>" is in the table
     Examples:
       |username|
-      |Alice.Duval|
-      |Anthony.Nolan|
+      |Fiona.Grace|
+      |Dominic.Chase|
       |Charlie.Carter|

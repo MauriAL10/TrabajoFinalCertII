@@ -43,7 +43,7 @@ public class LoginSteps {
 
     @Then("An error message is displayed")
     public void loginErrorIsDisplayed(){
-        loginPage.loginErrorIsDisplayed();
+        Assert.assertTrue(loginPage.loginErrorIsDisplayed());
     }
 
 

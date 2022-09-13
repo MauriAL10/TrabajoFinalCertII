@@ -3,6 +3,7 @@ package stepDefinitions;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
+import org.junit.Assert;
 import pages.MainPage;
 import pages.RecruitmentPage;
 import utilities.DriverManager;
@@ -33,5 +34,6 @@ public class RecrSteps {
     }
 
     @Then("The alert that the fields are required appears")
-    public void alertIsDisplayed(){recruitmentPage.inputRequiredIsDisplayed();}
+    public void alertIsDisplayed(){
+        Assert.assertTrue(recruitmentPage.inputRequiredIsDisplayed());}
 }

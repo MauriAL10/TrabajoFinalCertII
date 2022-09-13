@@ -16,9 +16,9 @@ Feature: PIM page feature
       Then The employee info is displayed
       Examples:
       |id|
-      |0038|
-      |0204|
-      |0070|
+      |0212|
+      |0066|
+      |0020|
 
     @addEmployeeTest
     Scenario: Add an employee in Pim Page

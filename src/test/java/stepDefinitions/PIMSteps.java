@@ -5,6 +5,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 import pages.LoginPage;
 import pages.MainPage;
 import pages.PIMPage;
@@ -40,7 +41,7 @@ public class PIMSteps {
     }
     @Then("The employee info is displayed")
     public void verifyEmployeeInfoIsDisplayed(){
-        pimPage.employeeInformationIsDisplayed();
+        Assert.assertTrue(pimPage.employeeInformationIsDisplayed());
     }
 
     @And("The orange banner is displayed")
